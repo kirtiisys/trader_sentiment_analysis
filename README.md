@@ -242,26 +242,42 @@ Explore trading behavior easily
 
 ## How to Run
 pip install -r requirements.txt
+
 streamlit run app.py
 
 ## Project Structure
-trader_sentiment_analysis/
-│
-├── Untitled.ipynb 
-├── app.py 
-├── requirements.txt 
-├── README.md 
-├── fear_greed_index.csv 
-├── historical_data.csv
-├── long_short_sentiment.png 
-├── pnl_comparison.png 
-├── win_rate.png 
-├── trade_frequency.png 
-├── avg_trade_size.png
-├── consistency_pnl.png
-├── leverage_pnl.png 
-├── trading_frequency_pnl.png
-├── trader_clusters.png 
+
+trader_sentiment_analysis
+
+Untitled.ipynb
+
+app.py
+
+requirements.txt 
+
+README.md
+
+fear_greed_index.csv 
+
+historical_data.csv
+
+long_short_sentiment.png 
+
+pnl_comparison.png 
+
+win_rate.png 
+
+trade_frequency.png 
+
+avg_trade_size.png
+
+consistency_pnl.png
+
+leverage_pnl.png 
+
+trading_frequency_pnl.png
+
+trader_clusters.png 
 
 ## Conclusion
 This analysis shows that **market sentiment plays a major role in both trader performance and behavior**.
