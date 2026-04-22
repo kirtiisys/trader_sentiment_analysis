@@ -123,19 +123,65 @@ This shows that risk-taking behavior varies with sentiment:
 ## 3. Trader Segmentation
 To better understand different types of traders, segmentation was done:
 
-i) High vs Low Risk Traders
+## i) High vs Low Risk Traders
 High-risk traders (larger positions) had higher returns but also higher losses
 Low-risk traders showed more stable performance
+## Long vs Short Positions by Market Sentiment
+![Long vs Short](long_short_sentiment.png)
+## Observations
+- During **Fear periods**, both BUY and SELL trades increase significantly, but **SELL trades slightly dominate**, indicating bearish expectations.
+- In **Greed conditions**, there is still a higher number of SELL trades compared to BUY trades, suggesting traders may be taking profits or hedging positions.
+- **Extreme Greed shows relatively balanced BUY and SELL activity**, indicating mixed behavior despite strong positive sentiment.
+- In **Neutral conditions**, both BUY and SELL trades are low and nearly equal, reflecting low conviction in market direction.
+## Insight
+This chart shows that **traders adjust their directional positions based on market sentiment**, but not always in a straightforward way.
+- Fear leads to **higher short (SELL) positions**, reflecting pessimism and risk aversion.
+- Even during Greed, the presence of significant SELL trades suggests traders are cautious and may be locking in gains.
+- Overall, trader behavior reflects a mix of sentiment-driven decisions and risk management strategies.
+
+## PnL by Leverage Segment
+![Leverage](leverage_pnl.png)
+## Observations
+- Traders using **high leverage are earning much higher profits** compared to low leverage traders.
+- On the other hand, **low leverage traders have very small returns**, which suggests they are playing it safer.
+- The difference between the two is quite large, showing how strongly leverage affects outcomes.
+## Insight
+This clearly shows a **risk vs reward situation**.
+- High leverage can give higher profits, but it also comes with higher risk.
+- Low leverage is safer, but the returns are limited.
+In simple terms, **taking too much risk might give big gains, but it’s not always reliable**, so using leverage carefully is important for long-term success.
 
 
-
-ii) Frequent vs Infrequent Traders
+## ii) Frequent vs Infrequent Traders
 Frequent traders adapted better and performed more consistently
 Infrequent traders showed mixed results
+## PnL by Trading Frequency
+![Trading Frequency](trading_frequency_pnl.png)
+## Observations
+- Infrequent traders are showing **higher average PnL** compared to frequent traders.
+- Frequent traders have **lower average returns**, even though they trade more often.
+- This suggests that doing more trades doesn’t necessarily lead to better performance.
+## Insight
+This shows that **quality of trades matters more than quantity**.
+- Infrequent traders may be taking more selective and well-planned trades.
+- Frequent traders might be overtrading, which can reduce overall profitability.
+In simple terms, **trading less but smarter seems to work better than trading too often**.
 
-iii) Consistent vs Inconsistent Traders
+
+## iii) Consistent vs Inconsistent Traders
 Consistent traders had stable profits over time
 Inconsistent traders had high fluctuations in performance
+## PnL: Consistent vs Inconsistent Traders
+![Consistency](consistency_pnl.png)
+## Observations
+- Inconsistent traders show **much higher average PnL** compared to consistent traders.
+- Consistent traders have **lower returns**, but their performance is likely more stable over time.
+- The large difference suggests that inconsistent traders experience **bigger gains**, but this may come with higher fluctuations.
+## Insight
+This highlights a classic trade-off between **high returns and stability**.
+- Inconsistent traders may take bigger risks, which can lead to higher profits but also unpredictable outcomes.
+- Consistent traders focus on steady performance, even if the returns are smaller.
+In simple terms, **higher profits don’t always mean better trading — consistency is more reliable in the long run**.
 
 ## Key Insights
 1) Market sentiment clearly affects both performance and behavior
@@ -162,12 +208,27 @@ A simple machine learning model (Random Forest) was built to predict whether a t
 Sentiment
 Trade size
 This shows that combining sentiment with behavior can help in prediction
+
 ## Clustering Traders
 Traders were grouped using clustering techniques into:
 High-risk traders
 Low-risk traders
 Moderate traders
 This helps in understanding different trading styles.
+## Trader Clusters (Behavioral Segmentation)
+![Trader Clusters](trader_clusters.png)
+## Observations
+- Traders are grouped into different clusters based on their **average trade size and average PnL**.
+- One group has **small trade sizes with relatively low or moderate PnL**, indicating more cautious trading behavior.
+- Another group shows **medium trade sizes with higher PnL**, suggesting more balanced and effective strategies.
+- A few traders take **very large positions**, but their PnL is not always consistently high.
+## Insight
+This clustering shows that **not all traders behave the same way**.
+- Some traders focus on **low-risk, small trades**, leading to stable but limited returns.
+- Others take **moderate risks and achieve better performance**, which seems to be a more balanced approach.
+- Traders with very large positions don’t always perform the best, highlighting that **bigger trades don’t guarantee higher profits**.
+In simple terms, **smart positioning matters more than just increasing trade size**.
+
 ## Streamlit Dashboard
 A basic interactive dashboard was created using Streamlit to:
 Visualize PnL trends
@@ -186,15 +247,31 @@ streamlit run app.py
 ## Project Structure
 trader_sentiment_analysis/
 │
-├── Untitled.ipynb
-├── app.py
-├── requirements.txt
-├── README.md
-├── fear_greed_index.csv
+├── Untitled.ipynb 
+├── app.py 
+├── requirements.txt 
+├── README.md 
+├── fear_greed_index.csv 
+├── historical_data.csv
+├── long_short_sentiment.png 
+├── pnl_comparison.png 
+├── win_rate.png 
+├── trade_frequency.png 
+├── avg_trade_size.png
+├── consistency_pnl.png
+├── leverage_pnl.png 
+├── trading_frequency_pnl.png
+├── trader_clusters.png 
 
-This project shows that market sentiment is not just a background factor — it directly
-influences how traders behave and how well they perform.
-Adapting strategies based on sentiment, along with maintaining consistency, can significantly improve trading outcomes.
+## Conclusion
+This analysis shows that **market sentiment plays a major role in both trader performance and behavior**.
+- Traders generally perform better during **Greed phases**, where market direction is clearer and confidence is higher.
+- During **Fear periods**, trading activity increases, but performance tends to drop, indicating reactive and less efficient decision-making.
+- Different trader segments behave very differently —  
+  high leverage and inconsistent traders achieve higher returns, but with greater risk, while consistent and low-risk traders show more stable outcomes.
+- More trading does not always lead to better results — **disciplined and selective trading tends to be more effective**.
+Overall, the key takeaway is that **understanding market sentiment and adapting behavior accordingly is crucial for sustainable trading performance**.  
+A balanced approach — combining controlled risk, consistency, and awareness of market conditions — is more reliable than aggressive or impulsive strategies.
 
 ## Author
 ## Kirti Upadhyay
