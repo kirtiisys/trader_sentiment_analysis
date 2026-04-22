@@ -54,21 +54,71 @@ observation:
 Markets driven by optimism (Greed) tend to support better trading outcomes, 
 while fear-driven markets make trading more difficult.
 
+## Average PnL by Market Sentiment
+![Average PnL](pnl_comparison.png)
+### Observations
+- Traders achieve the **highest average PnL during Greed periods**, indicating strong profitability in optimistic market conditions.
+- During **Fear periods**, the average PnL is moderate, showing that traders still generate returns but with less consistency.
+- In **Extreme Greed and Neutral conditions**, the PnL is comparatively lower, suggesting reduced trading efficiency or overconfidence effects.
+- There is a clear variation in profitability across different sentiment phases.
+### Insight
+This chart shows that **market sentiment has a direct impact on trader performance**.
+- Greed-driven markets provide better opportunities due to strong trends and momentum.
+- Fear-driven markets introduce uncertainty, leading to lower and inconsistent profits.
+- Traders who adapt their strategies based on sentiment can significantly improve their outcomes.
+
+
+## Win Rate by Market Sentiment
+![Win Rate](win_rate.png)
+### Observations
+- The **highest win rate is observed during Extreme Greed**, indicating that traders are most successful when the market is strongly bullish.
+- During **Greed conditions**, the win rate remains relatively high, showing consistent performance in positive market environments.
+- In **Fear periods**, the win rate drops, suggesting that traders struggle more when the market is uncertain or declining.
+- The **lowest win rate occurs during Neutral conditions**, indicating unclear market direction leads to less successful trades.
+### Insight
+This chart highlights that **trading success is closely linked to market sentiment**.
+- When sentiment is strongly positive (Greed), traders benefit from clearer trends and momentum.
+- In Fear or uncertain markets, decision-making becomes harder, leading to lower success rates.
+- This suggests that traders should be more cautious in Fear/Neutral markets and more active when strong trends exist.
+
+  
 ## 2. Behavior Changes Based on Sentiment
 Clear behavioral differences were observed:
-
 During Greed:
 Traders placed more trades
 Trade sizes were larger
 More long (buy) positions
-
 During Fear:
 Trading activity reduced
 Smaller positions were taken
 More short (sell) positions appeared
-
 Interpretation:
 Traders become more aggressive when the market is positive and more cautious when the market is uncertain.
+
+## Trade Frequency by Market Sentiment
+![Trade Frequency](trade_frequency.png)
+## Observations
+i) The highest number of trades occurs during Fear periods, indicating that traders are most active when the market is uncertain or volatile.
+ii) Trade frequency drops significantly during Greed and Neutral conditions, showing reduced participation.
+iii) Extreme Greed also has relatively low trade activity, suggesting traders may be more selective or confident in fewer trades.
+## Insight
+This suggests that market uncertainty drives higher trading activity.
+1) During Fear, traders react more frequently to market movements, possibly due to volatility or panic-driven decisions.
+2) In Greed conditions, traders may rely on clearer trends and take fewer but more confident positions.
+This highlights that high activity does not necessarily mean better performance, as Fear periods also showed lower profitability.
+
+## Average Trade Size by Market Sentiment
+![Avg Trade Size](avg_trade_size.png)
+## Observations
+i) The largest trade sizes occur during Extreme Greed, indicating aggressive risk-taking when market sentiment is highly positive.
+ii) Trade sizes remain relatively high during Fear periods, suggesting traders still take significant positions despite uncertainty.
+iii) In Greed and Neutral conditions, average trade sizes are lower, indicating more controlled or cautious trading.
+## Insight
+This shows that risk-taking behavior varies with sentiment:
+1) Traders take larger positions during strong bullish sentiment (Extreme Greed).
+2) During Fear, although activity is high, position sizes remain significant, which may increase risk exposure.
+3) More moderate trade sizes in Greed/Neutral conditions suggest a balance between risk and confidence.
+
 
 ## 3. Trader Segmentation
 To better understand different types of traders, segmentation was done:
